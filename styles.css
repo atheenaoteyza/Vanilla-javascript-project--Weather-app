@@ -231,7 +231,19 @@ li {
 }
 
 @media (max-height: 779px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #temperature {
+    font-size: 2rem;
+  }
   .weather-container {
-    height: auto;
+    height: 687px;
+    width: 400px;
+  }
+}
+@media (max-height: 686px) {
+  .weather-container {
+    height: 550px;
   }
 }
