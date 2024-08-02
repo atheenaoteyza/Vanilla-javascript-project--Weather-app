@@ -229,7 +229,7 @@ li {
   opacity: 0.5;
 }
 
-@media (max-height: 810px) {
+@media (max-height: 779px) {
   .weather-container {
     height: auto;
   }
