@@ -245,7 +245,7 @@ li {
     height: 550px;
   }
   .search {
-    margin: 0;
+    margin-top: 0.5rem;
   }
   .weather-img {
     height: 5rem;
