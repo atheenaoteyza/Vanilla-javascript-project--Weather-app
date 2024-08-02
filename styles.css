@@ -19,12 +19,13 @@
   --col-margin: 8rem 0 1rem 0;
 }
 
-/* Initially hide the content */
+/* Initially hide the content 
 .hidden {
-  visibility: hidden; /* Hide the content but still take up space in the layout */
-  opacity: 0; /* Make it fully transparent */
-  transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+  visibility: hidden; /* Hide the content but still take up space in the layout 
+  opacity: 0; /* Make it fully transparent 
+  transition: opacity 0.5s ease-in-out; /* Smooth transition effect 
 }
+*/
 
 /* Show the content */
 .visible {
@@ -81,7 +82,7 @@ body {
 .weather-card {
   border-radius: 8px;
   height: auto;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .weather-icon {
@@ -260,6 +261,12 @@ li {
     font-size: 12px;
     font-weight: 200;
     text-align: center;
+  }
+  .weather-card {
+    margin-top: 7rem;
+  }
+  .night {
+    --col-margin: 5.5rem 0 0.5rem 0;
   }
 }
 
