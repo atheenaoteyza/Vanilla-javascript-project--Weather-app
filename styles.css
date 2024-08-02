@@ -247,6 +247,20 @@ li {
   .search {
     margin: 0;
   }
+  .weather-img {
+    height: 5rem;
+  }
+
+  .humidity,
+  .sunrise-time {
+    font-size: 1.25rem;
+  }
+  .sunset,
+  .wind-speed {
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+  }
 }
 
 @media (max-width: 415px) {

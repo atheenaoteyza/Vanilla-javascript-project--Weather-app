@@ -139,6 +139,7 @@ function getTimePeriod(timeString) {
 let morningMode = localStorage.getItem("morningMode");
 const weatherLike = document.createElement("img");
 weatherLike.src = "images/clouds.png";
+weatherLike.classList.add("weather-img");
 const weatherCondition = document.querySelector(".weather-condition");
 
 const enableDarkMode = () => {
