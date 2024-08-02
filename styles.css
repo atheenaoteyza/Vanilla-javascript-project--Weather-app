@@ -52,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  max-height: 95vh;
   color: #fafafa;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Horizontal, vertical, blur, and color */
 }
