@@ -138,7 +138,6 @@ function getTimePeriod(timeString) {
 // check for saved 'darkMode' in localStorage
 let morningMode = localStorage.getItem("morningMode");
 const weatherLike = document.querySelector(".weather-img");
-weatherLike.src = "images/clouds.png";
 const weatherCondition = document.querySelector(".weather-condition");
 
 const enableDarkMode = () => {
@@ -227,3 +226,7 @@ document.addEventListener("click", async (event) => {
   }
   input.value = "";
 });
+(async () => {
+  input.value = "Manila";
+  await render(input.value);
+})();
