@@ -244,6 +244,9 @@ li {
   .weather-container {
     height: 550px;
   }
+  .search {
+    margin: 0;
+  }
 }
 
 @media (max-width: 415px) {
