@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div class="weather-container hidden">
+      <div class="weather-card">
+        <h1 id="city">Manila</h1>
+        <div class="weather-condition">
+          <div class="box">
+            <h2 class="today">Today, 4 August</h2>
+            <h2 id="temperature">25°C</h2>
+            <h2 id="condition">Sunny</h2>
+
+            <nav class="details">
+              <ul class="col">
+                <li class="row">
+                  <img src="images/star.png" alt="" class="sunrise-icon" />
+                  <p class="sunrise">Sunrise</p>
+                </li>
+                <li><p class="sunrise-time">5:28 AM</p></li>
+                <li><p class="sunset">Sunset: 7:25 PM</p></li>
+              </ul>
+              <ul class="col">
+                <li class="row">
+                  <img src="images/humidity.png" alt="" class="humidity-icon" />
+                  <p class="humidity-header">Humidity</p>
+                </li>
+                <li><p class="humidity">90%</p></li>
+                <li><p class="wind-speed">Wind Speed: 1.54 km/hr</p></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <form class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button><img src="images/search.png" id="search-icon" /></button>
+      </form>
+    </div>
+  </body>
+</html>
