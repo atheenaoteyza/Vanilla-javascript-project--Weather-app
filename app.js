@@ -141,13 +141,30 @@ const weatherLike = document.querySelector(".weather-img");
 const weatherCondition = document.querySelector(".weather-condition");
 
 const enableDarkMode = () => {
-  // 1. Add the class to the body
   document.body.classList.remove("night");
-
   document.body.classList.add("morning");
   weatherCondition.insertBefore(weatherLike, weatherCondition.firstChild);
 
-  // 2. Update darkMode in localStorage
+  const conditionElement = document.querySelector("#condition");
+  if (conditionElement) {
+    const condition = conditionElement.textContent.trim();
+    const weatherImages = {
+      Thunderstorm: "images/thunderstorm.png",
+      "Clear sky": "images/clear.png",
+      "Few clouds": "images/clouds.png",
+      "Scattered clouds": "images/scattered-clouds.png",
+      "Broken clouds": "images/broken-clouds.png",
+      "Shower rain": "images/shower-rain.png",
+      Rain: "images/rain.png",
+      Mist: "images/mist.png",
+      Snow: "images/snow.png",
+      "Overcast clouds": "images/overcast-clouds.png",
+    };
+    weatherLike.src = weatherImages[condition] || "images/clouds.png";
+  } else {
+    weatherLike.src = "images/clouds.png";
+  }
+
   localStorage.setItem("morningMode", "enabled");
 };
 

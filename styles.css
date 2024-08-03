@@ -85,6 +85,9 @@ body {
   margin-top: 4rem;
 }
 
+.weather-img {
+  height: 10rem;
+}
 .weather-icon {
   padding: 0;
 }
