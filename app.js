@@ -155,6 +155,7 @@ const enableDarkMode = () => {
       "Scattered clouds": "images/scattered-clouds.png",
       "Broken clouds": "images/broken-clouds.png",
       "Shower rain": "images/shower-rain.png",
+      "Light rain": "images/rain.png",
       Rain: "images/rain.png",
       Mist: "images/mist.png",
       Snow: "images/snow.png",
@@ -230,9 +231,6 @@ async function render(city) {
     /* interchanges condition image depending on weather conditions */
 
     // Show weather container
-    const weatherContainer = document.querySelector(".weather-container");
-    weatherContainer.classList.remove("hidden");
-    weatherContainer.classList.add("visible");
   }
 }
 const search = document.querySelector(".search");
@@ -243,6 +241,16 @@ document.addEventListener("click", async (event) => {
   }
   input.value = "";
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Access the body element
+  const body = document.querySelector("body");
+
+  // Add the 'visible' class to make the body element fade in
+  body.classList.remove("hidden");
+  body.classList.add("visible");
+});
+
 (async () => {
   input.value = "Manila";
   await render(input.value);
