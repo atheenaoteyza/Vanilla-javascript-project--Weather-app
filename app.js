@@ -193,7 +193,7 @@ async function render(city) {
 
     /* City name */
     const cityElement = document.getElementById("city");
-    cityElement.textContent = city;
+    cityElement.textContent = city.charAt(0).toUpperCase() + city.slice(1);
 
     /* rendering the current date */
     const today = document.querySelector(".today");
