@@ -234,11 +234,9 @@ async function render(city) {
   }
 }
 const search = document.querySelector(".search");
-document.addEventListener("click", async (e) => {
-  if (e.target.tagName == "BUTTON") {
-    e.preventDefault();
-    await render(input.value);
-  }
+document.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  await render(input.value);
   input.value = "";
 });
 
