@@ -234,9 +234,9 @@ async function render(city) {
   }
 }
 const search = document.querySelector(".search");
-document.addEventListener("click", async (event) => {
-  if (event.target.tagName == "BUTTON") {
-    event.preventDefault();
+document.addEventListener("click", async (e) => {
+  if (e.target.tagName == "BUTTON") {
+    e.preventDefault();
     await render(input.value);
   }
   input.value = "";
