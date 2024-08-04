@@ -121,10 +121,10 @@ function getTimePeriod(timeString) {
     ) {
       // Handle night period which spans midnight
       if (totalMinutes >= nightStart || totalMinutes <= nightEnd) {
-        disableDarkMode();
+        disableMorning();
         return "Night";
       } else {
-        enableDarkMode();
+        enableMorning();
         return "Morning";
       }
     } else {
@@ -140,7 +140,7 @@ let morningMode = localStorage.getItem("morningMode");
 const weatherLike = document.querySelector(".weather-img");
 const weatherCondition = document.querySelector(".weather-condition");
 
-const enableDarkMode = () => {
+const enableMorning = () => {
   document.body.classList.remove("night");
   document.body.classList.add("morning");
   weatherCondition.insertBefore(weatherLike, weatherCondition.firstChild);
@@ -169,7 +169,7 @@ const enableDarkMode = () => {
   localStorage.setItem("morningMode", "enabled");
 };
 
-const disableDarkMode = () => {
+const disableMorning = () => {
   // 1. Remove the class from the body
   document.body.classList.remove("morning");
   weatherLike.remove();
