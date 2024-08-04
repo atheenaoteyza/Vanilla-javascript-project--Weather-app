@@ -252,4 +252,5 @@ document.addEventListener("DOMContentLoaded", () => {
 (async () => {
   input.value = "Manila";
   await render(input.value);
+  input.value = "";
 })();
